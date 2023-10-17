@@ -13,7 +13,7 @@ const httpOptions = {
 })
 export class HeroServiceForLab {
 
-  private heroesUrl = 'http://localhost:3000/heroes';  // URL to web api
+  private heroesUrl = 'http://localhost:4200/heroes';  // URL to web api
 
   constructor(
     private http: HttpClient) { }
@@ -28,7 +28,5 @@ export class HeroServiceForLab {
   updateHero (hero: Hero): Observable<any> {
     return this.http.put(this.heroesUrl, hero, httpOptions)
   }
-  
-
-  
+    
 }

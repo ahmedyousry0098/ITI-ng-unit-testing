@@ -13,7 +13,6 @@ export class SquarePipeForLab implements PipeTransform {
     else{
       return 'Not a number';
     }
-      
   }
 
 }
